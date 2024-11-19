@@ -42,6 +42,14 @@
 <br/>
 <button id="download-csv" class="btn btn-info btn-xs" style="display: none;">Download as CSV</button><br/>
 <button id="download-json" class="btn btn-info btn-xs" style="display: none;">Download as JSON</button>
-<script src="popup.js"></script>
+<div id="llm_analysis">
+    <p>Some analyisis</p>
+</div>
+<script src="popup.js">
+    $(document).ready(function() {
+alert("ready");
+    $("#llm_analysis").hide();
+});
+</script>
 </body>
 </html>

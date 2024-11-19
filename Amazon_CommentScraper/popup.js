@@ -36,6 +36,7 @@ document.getElementById('scrape-btn').addEventListener('click', async () => {
           // Download reviews as JSON
           document.getElementById('download-json').addEventListener('click', function() {
           let jsonData = JSON.stringify(response.reviews, null, 2);
+          sendDataToPython(jsonData);
           downloadFile(jsonData, 'reviews.json', 'application/json');
           });
       } else {
@@ -68,3 +69,21 @@ function downloadFile(data, filename, mimeType) {
     a.click();
     URL.revokeObjectURL(url);
 }
+
+// Example of sending data to the Python server
+function sendDataToPython(data) {
+  fetch('http://localhost:5000/data', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    //body: JSON.stringify({ data: data })
+    body: JSON.stringify(data)
+  }).then(response => response.json())
+    .then(data => {if(data.status=="success"){
+    alert("ok");
+    $("#llm_analysis").show();}})
+    .catch(error => console.error('Error sending data:', error));
+}
+
+

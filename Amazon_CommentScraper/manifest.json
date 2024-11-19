@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Amazon_Comment_ScraperAndDownload",
-  "version": "1.0",
+  "version": "1.6",
   "description": "Scrapes comments/reviews from Amazon product pages. And also downloads it as csv/json",
   "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://www.amazon.in/*"],
