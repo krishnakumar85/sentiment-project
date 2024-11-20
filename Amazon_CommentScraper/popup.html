@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <title>Amazon Comment Scraper</title>
     <style>
         body {
@@ -41,14 +41,14 @@
 <div id="reviews"></div>
 <br/>
 <button id="download-csv" class="btn btn-info btn-xs" style="display: none;">Download as CSV</button><br/>
-<button id="download-json" class="btn btn-info btn-xs" style="display: none;">Download as JSON</button>
-<div id="llm_analysis">
-    <p>Some analyisis</p>
+<button id="download-json" class="btn btn-info btn-xs" style="display: none;">Download as JSON</button><br/>
+<button id="llm-analysis" class="btn btn-info btn-xs" style="display: none;">Get Sentiment</button>
+<div id="llm_analysis_response" style="display: none;">
+    <span id="llm_analysis_response_text">Ols text</span>
 </div>
 <script src="popup.js">
     $(document).ready(function() {
-alert("ready");
-    $("#llm_analysis").hide();
+
 });
 </script>
 </body>

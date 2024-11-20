@@ -30,7 +30,7 @@ def receive_data():
         # Do something with the data (e.g., save it, process it)
         # For demonstration, just return the data back to the client
         #return jsonify({"status": "success", "received_data": data}), 200
-        return jsonify({"status": "success"}), 200
+        return jsonify({"status": "success","analysis":"looks good"}), 200
 
     except Exception as e:
         print(f"Error: {e}")
