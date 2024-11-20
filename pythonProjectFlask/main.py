@@ -21,8 +21,11 @@ def receive_data():
         #print(data)
         #readcomments(data)
         reviews = json.loads(data)
+        res = "" #this variable will have all reviews
         for obj in reviews:
-            print(f"Review: {obj['text']}")
+            #print(f"Review: {obj['text']}")
+            res = res + "\n" + obj['text']
+        print(res)
 
         # Do something with the data (e.g., save it, process it)
         # For demonstration, just return the data back to the client
