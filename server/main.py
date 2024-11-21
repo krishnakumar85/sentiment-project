@@ -52,7 +52,6 @@ Sustainability/Environmental Impact
 Safety Features
 Split the features into positive and negative points. Only include features that have a significant number of mentions; omit features that have very few positive or negative reviews.
 Do not include explanations about the features; list features as concise bullet points without explanations.
-Provide a brief overview of customers' overall feelings about the product, identifying if they are generally satisfied or dissatisfied, and any recurring themes that indicate strong customer sentiments.
 
 Give your response in HTML.
  """
