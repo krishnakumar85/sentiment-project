@@ -1,9 +1,9 @@
 name: Build and Deploy Flask API Docker Container
 
 on:
-  push:# Trigger action on push to the main branch
+  push: 
     branches:
-      - develop
+      - develop  # Trigger action on push to the main branch
       - main
   pull_request:
     branches:
