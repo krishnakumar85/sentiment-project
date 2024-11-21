@@ -25,8 +25,8 @@ document.getElementById('scrape-btn').addEventListener('click', async () => {
           reviewsContainer.appendChild(reviewElement);
         });
         // Show download buttons
-        document.getElementById('download-csv').style.display = 'block';
-        document.getElementById('download-json').style.display = 'block';
+        document.getElementById('download-csv').style.display = 'hidden';
+        document.getElementById('download-json').style.display = 'hidden';
         document.getElementById('llm-analysis').style.display = 'block';
 
         // Download reviews as CSV
@@ -89,7 +89,10 @@ function sendDataToPython(data) {
   }).then(response => response.json())
     .then(data => {if(data.status=="success"){
     document.getElementById('llm_analysis_response').style.display = 'block';
-    $("#llm_analysis_response_text").text(data.analysis);
+    $("#llm_analysis_response_text").html(data.analysis);
+    $('html, body').animate({
+                    scrollTop: $("#llm_analysis_response_text").offset().top
+                }, 2000);
 
     }
     })

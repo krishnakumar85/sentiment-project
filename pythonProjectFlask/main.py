@@ -53,6 +53,8 @@ Safety Features
 Split the features into positive and negative points. Only include features that have a significant number of mentions; omit features that have very few positive or negative reviews.
 Do not include explanations about the features; list features as concise bullet points without explanations.
 Provide a brief overview of customers' overall feelings about the product, identifying if they are generally satisfied or dissatisfied, and any recurring themes that indicate strong customer sentiments.
+
+Give your response in HTML.
  """
 
     my_messages = [
@@ -104,6 +106,7 @@ def receive_data():
         # For demonstration, just return the data back to the client
         #return jsonify({"status": "success", "received_data": data}), 200
         sentiment = fetch_sentiment(res)
+        sentiment = sentiment[7:-3]
         return jsonify({"status": "success","analysis":sentiment}), 200
 
     except Exception as e:

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +5,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <title>Amazon Comment Scraper</title>
+    <title>Product Review analysis</title>
     <style>
         body {
           font-family: Arial, sans-serif;
           margin: 10px;
+          min-width: 500px;
+          max-width: 100%;
+          position: relative;
+          vertical-align: middle;
         }
         #scrape-btn {
           background-color: #007bff;
@@ -36,13 +39,15 @@
     </style>
 </head>
 <body>
-<h2>Amazon Comment Scraper</h2>
-<button id="scrape-btn">Scrape Comments</button>
+<h2 style="text-align: center;">Product Review Analysis</h2>
+<div id="scrape-container" style="text-align: center;"><button id="scrape-btn">Scrape Comments</button></div>
 <div id="reviews"></div>
 <br/>
 <button id="download-csv" class="btn btn-info btn-xs" style="display: none;">Download as CSV</button><br/>
 <button id="download-json" class="btn btn-info btn-xs" style="display: none;">Download as JSON</button><br/>
-<button id="llm-analysis" class="btn btn-info btn-xs" style="display: none;">Get Sentiment</button>
+<div id="summarizer" style="text-align: center;">
+<button id="llm-analysis" class="btn btn-primary btn-lg btn-block" style="display: none;">Get Sentiment</button>
+</div>
 <div id="llm_analysis_response" style="display: none;">
     <span id="llm_analysis_response_text">Ols text</span>
 </div>
