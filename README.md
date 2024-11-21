@@ -59,6 +59,7 @@ PRISM uses LLM models to identify dominant emotions and classify reviews based o
 
 ### Environment setup
 ```bash
+cd server
 python3 -m venv venv
 ```
 
@@ -78,12 +79,23 @@ flask run
 ```
 
 ## Setting up chrome app
-
+Load the chrome extension by visiting the chrome developer tools 
+- Enable "Dev mode"
+- Click on "Load Unpacked" to load the chrome extension
 
 
 ## Docker setup
+The docker image is built using github actions and can be accessed from here -
 
+```bash
+docker pull abhishekdutta123/my-flask-api:latest
+```
 
+To run the docker container,
+
+```bash
+docker run -d -p 5000:5000 abhishekdutta123/my-flask-api:latest
+```
 
 ## 6. Outcomes  
 
