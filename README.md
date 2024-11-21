@@ -1,6 +1,6 @@
-# sentiment-project
+# PRISM
 This is a project completed as part of the online course on AI and machine learning offered by CCE, IISc.
-The project title is **PRISM: A Chrome Extension for AI-based Sentiment Analysis of Users' Feedback**. Here, **PRISM** is acronym for **P**roduct **R**eview via **I**ntelligent **S**entiment **M**ining. The summary contains the following:
+The project title is **PRISM: A Chrome Extension for AI-based Sentiment Analysis of Users' reviews**. Here, **PRISM** is acronym for **P**roduct **R**eview via **I**ntelligent **S**entiment **M**ining. The summary contains the following:
 1. Introduction
 2. Problem Statement
 3. Proposed Solution
@@ -53,7 +53,9 @@ PRISM uses LLM models to identify dominant emotions and classify reviews based o
 - **Temperature Control**: A low temperature value (T=0) was chosen to ensure deterministic and accurate results, avoiding the randomness that comes with higher temperature settings.  
 - **Cost Optimization**: By setting a token limit of 800, PRISM ensures that summaries are concise yet detailed enough for actionable insights, making it cost-effective for large-scale analysis.  
 
-### Setting up the server
+# Developer Setup
+
+## Setting up the server
 
 ### Environment setup
 ```bash
@@ -75,7 +77,14 @@ pip install -r requirements.txt
 flask run
 ```
 
-### Setting up chrome app
+## Setting up chrome app
+
+
+
+## Docker setup
+
+
+
 ## 6. Outcomes  
 
 PRISM demonstrated the following capabilities:  
