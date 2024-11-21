@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Amazon_Comment_ScraperAndDownload",
+  "name": "PRISM - AI-based Sentiment Analysis of Users",
   "version": "1.6",
   "description": "Scrapes comments/reviews from Amazon product pages. And also downloads it as csv/json",
   "permissions": ["activeTab", "scripting", "storage"],
