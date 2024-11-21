@@ -48,9 +48,8 @@ The development of PRISM was structured into three key phases:
 
 ---
 
-## 5. Technical Highlights
-### Natural Language Processing (NLP): 
-PRISM uses NLP models to identify dominant emotions and classify reviews based on recurring themes like customer service, product quality, or delivery experience.  
+## 5. Technical Highlights 
+PRISM uses LLM models to identify dominant emotions and classify reviews based on recurring themes like customer service, product quality, or delivery experience.  
 - **Temperature Control**: A low temperature value (T=0) was chosen to ensure deterministic and accurate results, avoiding the randomness that comes with higher temperature settings.  
 - **Cost Optimization**: By setting a token limit of 800, PRISM ensures that summaries are concise yet detailed enough for actionable insights, making it cost-effective for large-scale analysis.  
 
