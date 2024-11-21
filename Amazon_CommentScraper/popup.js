@@ -79,7 +79,7 @@ function downloadFile(data, filename, mimeType) {
 
 // Example of sending data to the Python server
 function sendDataToPython(data) {
-  fetch('http://localhost:5000/data', {
+  fetch('http://localhost:5050/data', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
