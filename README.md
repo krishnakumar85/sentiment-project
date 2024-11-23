@@ -13,6 +13,8 @@ The project title is **PRISM: A Chrome Extension for AI-based Sentiment Analysis
 In the modern age of e-commerce and digital services, both consumers and businesses face significant challenges in sifting through countless online reviews to extract actionable insights. Reviews often contain critical information about customer satisfaction, product features, and service efficiency. However, due to the sheer volume of reviews and the complexity of human emotions embedded in text, manually processing this data is infeasible. 
 
 **PRISM** (Product Review through via INtelligent Sentiment Mining) is a solution designed to address these challenges. It leverages artificial intelligence to classify reviews, analyze dominant emotions, highlight key features, and summarize insights that empower consumers to make informed purchasing decisions while enabling businesses to refine their operations effectively.
+
+
 ## 2. Problem Statement
 1. **Volume Overload**: The massive number of online reviews makes manual analysis impossible.  
 2. **Emotional Ambiguity**: The sentiments and emotions behind a review are often hidden within nuanced language.  
@@ -27,6 +29,8 @@ PRISM offers a scalable, AI-driven tool that:
 - Summarizes actionable insights to help consumers and businesses.  
 
 By providing clarity and focus, PRISM simplifies decision-making for both stakeholders. 
+
+![image](https://github.com/user-attachments/assets/4c1e6ee8-4a05-4abf-99e0-6737d6f64dcc)
 
 ---
 
@@ -107,9 +111,9 @@ PRISM demonstrated the following capabilities:
 
 ## 7. Future Roadmap  
 
-To enhance PRISM's capabilities and usability, the following steps are planned:  
+To enhance PRISM's capabilities and usability, the following steps are planned: 
 
 1. **Expand Dataset**: Increase the diversity and scale of datasets by incorporating reviews across a wider variety of platforms and industries.  
-2. **Enhance Model Accuracy**: Employ advanced AI techniques such as transformer-based architectures (e.g., BERT or GPT-4) to improve sentiment detection and thematic analysis.  
+2. **Enhance Model Accuracy**: Improve model performance using different LLM models, algorithms and fine-tuning  
 3. **User Feedback Integration**: Continuously gather feedback from users to refine the tool and align it with evolving needs.  
 4. **Collaborations**: Partner with organizations for data sharing and collaborative insights to make PRISM a universal solution for review analysis.  
